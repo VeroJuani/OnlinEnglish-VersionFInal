@@ -1,3 +1,7 @@
+/* Estilo general de toda la página */
+
+
+/* cuerpo */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -59,7 +63,6 @@ header {
     margin: 0;
 }
 
-
 /* Botones de inicio de sesión y registro */
 .login-button,
 .registro-button {
@@ -104,6 +107,14 @@ nav a {
     font-size: 18px; 
     transition: font-size 0.2s, transform 0.2s;
 }
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+/* Estilos para la pagina principal */
 
 .about-section {
     background-color: #f0f0f0;
@@ -210,20 +221,31 @@ main {
 }
 
 
-.ubicacion {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: 1200px;
-    grid-gap: 20px; /* Agrega un espacio entre las columnas si es necesario */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+/* Estilos para la pagina de alumnos */
+
+.info-alumnos{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;;
 }
 
-.map {
-    grid-column: 1;
-    grid-row: 1;
-    /* Otros estilos para el mapa */
+.section-subtitle-alumnos{
+    font-size:20px;
+    font-weight: bold;
+    text-align: left;
+    font-weight: 500;
+}
+.section-info-alumnos{
+    font-size:20px;
+    font-weight: normal;
+    text-align: left;
 }
 
-/* Estilos para el main de alumnos */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
@@ -257,58 +279,25 @@ main {
 }
 
 
-/* Estilos para el footer con Flexbox */
-footer {
-    background-color: #4E598C;
-    color: #fff;
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
 
-.footer-title {
-    font-size: 24px;
-}
-
-.social-icons {
-    display: flex; 
-    align-items: center;
-    margin-top: 20px; 
-}
-
-.social-icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 20px;
-    text-decoration: none; 
-    color: #fff;
-    transition: color 0.3s, transform 0.3s; 
-}
-.social-icon:hover {
-    color: #FCAF58; 
-    transform: scale(1.2); 
-}
-
-.social-icon img {
-    width: 40px;
-    height: auto;
-    margin-bottom: 10px; 
-}
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 
-.social-icon h5 {
-    font-size: 18px; 
-    margin: 0; 
+
+/* Estilos para la pagina de contacto */
+
+.ubicacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    grid-gap: 20px; /* Agrega un espacio entre las columnas si es necesario */
 }
 
-.footer-info {
-    font-size: 14px; 
-    margin: 10px 0; 
+.map {
+    grid-column: 1;
+    grid-row: 1;
+    /* Otros estilos para el mapa */
 }
-
 /* Estilo para los botones de enviar/borrar en contacto */
 button {
     padding: 10px 20px;
@@ -321,12 +310,6 @@ button {
 
 button:hover {
     background-color: #ff8c42;
-}
-
-.footer-info {
-    font-size: 14px;
-    text-align: center;
-    padding: 10px 0; /* Agregado para dar un poco de espacio en la parte inferior */
 }
 
 /* Estilo para el formulario de contacto y contacto */
@@ -394,3 +377,69 @@ input[type="number"],
         opacity: 1;
     }
 }
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+/* Estilos para el footer con Flexbox */
+footer {
+    background-color: #4E598C;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-title {
+    font-size: 24px;
+}
+
+.social-icons {
+    display: flex; 
+    align-items: center;
+    margin-top: 20px; 
+}
+
+.social-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    text-decoration: none; 
+    color: #fff;
+    transition: color 0.3s, transform 0.3s; 
+}
+.social-icon:hover {
+    color: #FCAF58; 
+    transform: scale(1.2); 
+}
+
+.social-icon img {
+    width: 40px;
+    height: auto;
+    margin-bottom: 10px; 
+}
+
+
+.social-icon h5 {
+    font-size: 18px; 
+    margin: 0; 
+}
+
+.footer-info {
+    font-size: 14px; 
+    margin: 10px 0; 
+}
+
+.footer-info {
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 0; /* Agregado para dar un poco de espacio en la parte inferior */
+}
+
+
