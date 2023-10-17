@@ -17,17 +17,9 @@ function validarFormulario() {
         return false;
     }
 
-    // Aquí puedes agregar más validaciones según tus necesidades
 
-    errorMessage.textContent = ""; // Borra cualquier mensaje de error anterior
-    return true; // Envía el formulario si todo está correcto
+
+    errorMessage.textContent = ""; 
+    return true; 
 }
 
-function toggleMenu() {
-    var menu = document.querySelector(".mobile-menu");
-    if (menu.style.display === "block") {
-        menu.style.display = "none";
-    } else {
-        menu.style.display = "block";
-    }
-}
