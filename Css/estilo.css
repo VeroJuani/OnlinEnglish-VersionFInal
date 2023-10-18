@@ -151,12 +151,13 @@ nav a {
 }
 .course-categories {
     display: flex;
-    justify-content:center; 
+    text-align: center; 
 }
 
 .course-list {
     list-style-type: square;
     padding-left: 20px;
+    text-align: justify;
 }
 
 .course-category-conteiner {
@@ -167,6 +168,7 @@ nav a {
 
 .course-info {
     color: orange;
+    font-size: 15px;
 }
 
 .content-container {
