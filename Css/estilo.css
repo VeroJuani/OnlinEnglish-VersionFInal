@@ -139,6 +139,7 @@ nav a {
     font-size:20px;
     font-weight: normal;
     text-align: center;
+    color: black;
 }
 .courses-section {
     background-color: #f0f0f0;
@@ -244,12 +245,15 @@ main {
     font-weight: bold;
     text-align: left;
     font-weight: 500;
+    text-align: justify ;
 }
 .section-info-alumnos{
     font-size:20px;
     font-weight: normal;
-    text-align: left;
+    text-align: justify;
+
 }
+
 
 .grid-container {
     display: grid;
