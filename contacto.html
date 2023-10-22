@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Css/estilo.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css/estilo.css">
     <title>OnlinEnglish</title>
 </head>
 
@@ -100,8 +105,120 @@
                     </div>
                 </div>
         
-                <h6 class="footer-info">OnlinEnglish 2023 Derechos&Reservados</h6>
+                <h6 class="footer-info">OnlinEnglish 2023 Derechos Reservados</h6>
     </footer>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css/estilo.css">
+    <title>OnlinEnglish</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="img/onlineNglish (1).png" alt="Logotipo de OnlineEnglish" class="logo">
+        </div>
+        <div class="header-content">
+            <h1 class="header-title">OnlinEnglish</h1>
+            <h3 class="header-subtitle">Animate a abrir nuevas puertas...</h3>
+        </div>
+        <div class="header-buttons">
+            <a href="login.html" class="login-button">Iniciar Sesión</a>
+            <a href="registro.html" class="registro-button">Registrarse</a>
+        </div>
+    </header>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="alumnos.html">Alumnos</a>
+            <a href="prueba.html">Prueba de Nivelación</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    
+    <main class="content-container-contacto">
+            <section class="contact-section">
+                <h3>Formulario de contacto</h3>
+                <form id="contact-form" onsubmit="return validarFormulario()">
+                    <fieldset>
+                        <legend>Datos Personales</legend>
+                        <p>
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" name="nombre" id="nombre" autocomplete="off" placeholder="Ingrese su nombre" required>
+                        </p>
+                        <p>
+                            <label for="apellido">Apellido:</label>
+                            <input type="text" name="apellido" id="apellido" autocomplete="off" placeholder="Ingrese su apellido" required>
+                        </p>
+                        <p>
+                            <label for="edad">Edad:</label>
+                            <input type="number" name="edad" id="edad" min="1" max="100" required>
+                        </p>
+                        <p>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" autocomplete="off" placeholder="Ingrese su Email" required>
+                        </p>
+                        <p>
+                            <label for="celular">Celular:</label>
+                            <input type="text" name="celular" id="celular" autocomplete="off" placeholder="011 1522887766" required>
+                        </p>
+                        <p>
+                            <label for="consulta">Consulta:</label>
+                            <input type="text" name="consulta" id="consulta" autocomplete="off" placeholder="Ingrese su consulta" required>
+                        </p>
+                        <span id="error-message" style="color: red;"></span>
+                        <p>
+                            <button type="submit">Enviar</button>
+                            <button type="reset">Borrar</button>
+                        </p>
+                    </fieldset>
+                </form>
+            </section>
+        
+            <section class="location-section">
+                <h3>Ubicación</h3>
+                <h4>Casa Central: Av. Santa Fe 1560</h4>
+                <h4>Horario de atención: Lun. a Vie. de 9:00 a 18:00 hs.</h4>
+                <h4>Telefono de contacto: 0800-222-5566</h4>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d821.0835039563243!2d-58.390187330427096!3d-
+                34.59571439434052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccabeb4261b37%3A0xed9edb0cdf93279!2s
+                Avenida%20Santa%20Fe%201560!5e0!3m2!1ses-419!2sar!4v1694981006478!5m2!1ses-419!2sar" width="600"
+                    height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </main>
+
+    <footer class="flex">
+                <h4 class="footer-title">Seguinos en nuestras redes</h4>
+                <div class="social-icons">
+                    <div class="social-icon">
+                        <img src="img/instagram.png" alt="Logo de Instagram">
+                        <h5>Instagram</h5>
+                    </div>
+                    <div class="social-icon">
+                        <img src="img/facebook.png" alt="Logo de Facebook">
+                        <h5>Facebook</h5>
+                    </div>
+                    <div class="social-icon">
+                        <img src="img/linkedin.png" alt="Logo de LinkedIn">
+                        <h5>LinkedIn</h5>
+                    </div>
+                </div>
+        
+                <h6 class="footer-info">OnlinEnglish 2023 Derechos Reservados</h6>
+    </footer>
+</body>
+
+>>>>>>> 470cfc29c6203cae380aae5edb722f495675f744
 </html>
