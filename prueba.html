@@ -34,51 +34,84 @@
         <a href="contacto.html">Contacto</a>
     </nav>
 
-    <Section>
-        <section class="section-title">
+    <Section class="level-1">
+        <img src="img/dai-ke-GkraTrCYA_0-unsplash.jpg" alt="Imagen de Evaluacion" class="evaluacion-image1">
 
-            <h3>¿Querés conocer tu nivel actual de inglés?</h3>
+        <section class="evaluacion">
+            <section class="section-title">
+                <h3>¿Querés conocer tu nivel actual de inglés?</h3>
+            </section>
+
+            <h4 class="section-info">
+                Realiza nuestro breve cuestionario en línea para descubrir qué curso y nivel son los
+                más adecuados para vos. Nuestra prueba es 100% online y está diseñada con preguntas y actividades
+                interactivas que evaluarán tus habilidades de comprensión oral y escrita en inglés. Después de completar
+                el examen, recibirás un correo electrónico con tus resultados y la recomendación de nivel de nuestros
+                profesionales. ¡Te deseamos buena suerte en tu evaluación!
+            </h4>
         </section>
-
-        <h4 class="section-info">
-            Realiza nuestro breve cuestionario en línea para descubrir qué curso y nivel son los
-            más adecuados para vos. Nuestra prueba es 100% online y está diseñada con preguntas y actividades
-            interactivas que evaluarán tus habilidades de comprensión oral y escrita en inglés. Después de completar
-            el examen, recibirás un correo electrónico con tus resultados y la recomendación de nivel de nuestros
-            profesionales. ¡Te deseamos buena suerte en tu evaluación!
-        </h4>
-
     </section>
 
 
-    <Section>
-        <section class="section-title">
-            <h3>¿Cómo se determina tu nivel de inglés?</h3>
+    <Section class="level-2">
+        <section class="evaluacion">
+            <section class="section-title">
+                <h3>¿Cómo se determina tu nivel de inglés?</h3>
+            </section>
+            <h4 class="section-info">
+                Una vez que hayas terminado las preguntas de nivel en nuestro examen de inglés online,
+                tus respuestas seran evaluadas según el Marco Común Europeo de Referencia para las Lenguas
+                (MCER). Esta metodología es ampliamente reconocida en la comunidad educativa internacional
+                y se centra en medir la comprensión lectora, las habilidades gramaticales, la expresión oral
+                y las habilidades comunicativas. Los niveles oficiales de inglés según el MCER son: A1 (básico),
+                A2 (pre-intermedio), B1 (intermedio), B2 (intermedio-alto) y C1 y C2 (avanzado).
+            </h4>
         </section>
-        <h4 class="section-info">
-            Una vez que hayas terminado las preguntas de nivel en nuestro examen de inglés online,
-            tus respuestas seran evaluadas según el Marco Común Europeo de Referencia para las Lenguas
-            (MCER). Esta metodología es ampliamente reconocida en la comunidad educativa internacional
-            y se centra en medir la comprensión lectora, las habilidades gramaticales, la expresión oral
-            y las habilidades comunicativas. Los niveles oficiales de inglés según el MCER son: A1 (básico),
-            A2 (pre-intermedio), B1 (intermedio), B2 (intermedio-alto) y C1 y C2 (avanzado).
-        </h4>
-
+        <img src="img/dylan-ferreira-HJmxky8Fvmo-unsplash.jpg" alt="Imagen de Evaluacion" class="evaluacion-image2">
     </Section>
 
-    <section>
-        <Section>
-            <section class="section-title">
-                <h3>Realizar la Prueba:</h3>
-            </section>
-        </Section>
+    <section class="contacto-evaluacion">
 
-        <div class="container-boton-prueba">
-            <button class="button-prueba">Realizar la prueba</button>
+
+        <div class="contedor-contact">
+            <section class="contact-section-prueba">
+                <form id="contact-form" onsubmit="return validarFormulario()">
+
+                    <Section>
+                        <section class="section-title-prueba">
+                            <h3>Descubrí tu nivel de inglés</h3>
+                        </section>
+                    </Section>
+
+                    <p>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" autocomplete="off" placeholder="Ingrese su nombre"
+                            required>
+                    </p>
+
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" autocomplete="off" placeholder="Ingrese su Email"
+                            required>
+                    </p>
+
+
+                    <span id="error-message" style="color: red;"></span>
+                    <div class="button-prueba">
+                        <p>
+                            <button type="submit">Enviar</button>
+                            <button type="reset">Borrar</button>
+                         </p>
+                    </div>
+                </form>
+
+
+            </section>
         </div>
 
+
     </section>
-    
+
     <footer class="flex">
         <h4 class="footer-title">Seguinos en nuestras redes</h4>
         <div class="social-icons">
