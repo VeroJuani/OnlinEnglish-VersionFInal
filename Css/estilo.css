@@ -21,7 +21,7 @@ header {
     padding: 20px;
     display: flex;
     align-items: center;
-    z-index: 1000; /* Un valor alto para mantenerla en la parte superior */
+    z-index: 1000; 
 }
 
 .logo-container {
