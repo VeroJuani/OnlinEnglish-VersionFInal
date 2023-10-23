@@ -287,6 +287,26 @@ main {
     height: auto; 
 }
 
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/*Estilos para la pagina de prueba*/
+
+.container-boton-prueba {
+    display: flex;
+    justify-content: center;
+  }
+
+.button-prueba{
+    padding: 10px 20px;
+    background-color: #4E598C;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin-bottom: 20px;
+}
 
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -327,7 +347,7 @@ input[type="email"],
 input[type="number"],
 #consulta {
     width: 100%;
-    padding: 10px;
+    padding: 5px;
     margin-bottom: 20px;
     border: 1px solid #4E598C;
     border-radius: 10px;
