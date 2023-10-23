@@ -7,19 +7,29 @@ function validarFormulario() {
     var consulta = document.getElementById("consulta").value;
     var errorMessage = document.getElementById("error-message");
 
-    if (!nombre || !apellido || !edad || !email || !celular || !consulta) {
+    if (!camposCompletos(nombre, apellido, edad, email, celular, consulta)) {
         errorMessage.textContent = "Todos los campos son obligatorios. Por favor, complételos.";
         return false;
     }
 
-    if (!email.includes("@")) {
+    if (!validarEmail(email)) {
         errorMessage.textContent = "El campo de correo electrónico debe contener un '@'.";
         return false;
     }
 
-
-
-    errorMessage.textContent = ""; 
-    return true; 
+    errorMessage.textContent = "";
+    return true;
 }
 
+function camposCompletos() {
+    for (var i = 0; i < arguments.length; i++) {
+        if (!arguments[i]) {
+            return false;
+        }
+    }
+    return true;
+}
+
+function validarEmail(email) {
+    return email.includes("@");
+}
