@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="Css/estilo.css">
-        <title>OnlinEnglish</title>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css/estilo.css">
+    <title>OnlinEnglish</title>
+</head>
+
 <body>
     <header>
         <div class="logo-container">
@@ -32,37 +34,83 @@
         <a href="contacto.html">Contacto</a>
     </nav>
 
-    <Section>
-        <section class="section-title">
-        <H3>¿Querés conocer tu nivel actual de inglés?</H3>
-         </section>
+    <Section class="level-1">
+        <img src="img/dai-ke-GkraTrCYA_0-unsplash.jpg" alt="Imagen de Evaluacion" class="evaluacion-image1">
 
-         <section class="courses-section">
-        <h3>Con este breve cuestionario sabras que curso y nivel es el indicado para vos:</h3 >
+        <section class="evaluacion">
+            <section class="section-title">
+                <h3>¿Querés conocer tu nivel actual de inglés?</h3>
+            </section>
+
+            <h4 class="section-info">
+                Realiza nuestro breve cuestionario en línea para descubrir qué curso y nivel son los
+                más adecuados para vos. Nuestra prueba es 100% online y está diseñada con preguntas y actividades
+                interactivas que evaluarán tus habilidades de comprensión oral y escrita en inglés. Después de completar
+                el examen, recibirás un correo electrónico con tus resultados y la recomendación de nivel de nuestros
+                profesionales. ¡Te deseamos buena suerte en tu evaluación!
+            </h4>
         </section>
+    </section>
 
-        <ul class="course-list">
-            <li>Completa el formulario</li>
-            <li>Realiza el cuestionario</li>
-            <li>Te enviamos el resultado a tu email</li>
-        </ul>
-        <h6 class="course-info">Podes conocer más de la propuesta haciendo click <a href="#">aquí</a>
-        </h6>
+
+    <Section class="level-2">
+        <section class="evaluacion">
+            <section class="section-title">
+                <h3>¿Cómo se determina tu nivel de inglés?</h3>
+            </section>
+            <h4 class="section-info">
+                Una vez que hayas terminado las preguntas de nivel en nuestro examen de inglés online,
+                tus respuestas seran evaluadas según el Marco Común Europeo de Referencia para las Lenguas
+                (MCER). Esta metodología es ampliamente reconocida en la comunidad educativa internacional
+                y se centra en medir la comprensión lectora, las habilidades gramaticales, la expresión oral
+                y las habilidades comunicativas. Los niveles oficiales de inglés según el MCER son: A1 (básico),
+                A2 (pre-intermedio), B1 (intermedio), B2 (intermedio-alto) y C1 y C2 (avanzado).
+            </h4>
+        </section>
+        <img src="img/dylan-ferreira-HJmxky8Fvmo-unsplash.jpg" alt="Imagen de Evaluacion" class="evaluacion-image2">
     </Section>
 
-    <Section>
-        <section class="section-title">
-        <h3>¿Cómo se realiza?</h3>
-        </section>
+    <section class="contacto-evaluacion">
 
-        <section class="courses-section">
-        <h4>Nuestro test es 100% online, incluye preguntas y actividades interactivas
-            de esta manera nuestros docentes podrá evaluar tus habilidades de compresión
-            y la fluidez con la que manejas el idioma. Luego del examém se enviará a tu mail
-            el resultado del mismo y el nivel que aconsejan nuestros profesionales.
-        </h4>
-        </section>
-    </Section>
+
+        <div class="contedor-contact">
+            <section class="contact-section-prueba">
+                <form id="contact-form" onsubmit="return validarFormulario()">
+
+                    <Section>
+                        <section class="section-title-prueba">
+                            <h3>Descubrí tu nivel de inglés</h3>
+                        </section>
+                    </Section>
+
+                    <p>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" autocomplete="off" placeholder="Ingrese su nombre"
+                            required>
+                    </p>
+
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" autocomplete="off" placeholder="Ingrese su Email"
+                            required>
+                    </p>
+
+
+                    <span id="error-message" style="color: red;"></span>
+                    <div class="button-prueba">
+                        <p>
+                            <button type="submit">Enviar</button>
+                            <button type="reset">Borrar</button>
+                         </p>
+                    </div>
+                </form>
+
+
+            </section>
+        </div>
+
+
+    </section>
 
     <footer class="flex">
         <h4 class="footer-title">Seguinos en nuestras redes</h4>
@@ -81,7 +129,8 @@
             </div>
         </div>
 
-        <h6 class="footer-info">OnlinEnglish 2023 Derechos&Reservados</h6>
+        <h6 class="footer-info">OnlinEnglish 2023 Derechos Reservados</h6>
     </footer>
 </body>
+
 </html>
