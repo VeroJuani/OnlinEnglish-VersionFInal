@@ -227,6 +227,7 @@ main {
 }
 
 
+
 /* ////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 
@@ -335,7 +336,7 @@ input[type="number"],
 
 /* Estilo para el campo de consulta */
 #consulta {
-    height: 150px; /* Aumentado la altura para dar más espacio */
+    height: 150px; 
 }
 
 /* Estilo para el contenedor principal (flexbox) */
@@ -349,7 +350,7 @@ input[type="number"],
 .contact-section {
     flex: 1;
     display: flex;
-    flex-direction: column; /* Agregado */
+    flex-direction: column; 
     padding: 20px;
     border: 1px solid #FCAF58;
 }
@@ -378,11 +379,7 @@ input[type="number"],
     }
 }
 
-
-
 /* ////////////////////////////////////////////////////////////////////////////////////////////////// */
-
-
 
 /* Estilos para el footer con Flexbox */
 footer {
@@ -440,4 +437,50 @@ footer {
     font-size: 14px;
     text-align: center;
     padding: 10px 0; 
+}
+
+/* Estilos específicos para dispositivos móviles como iPhone */
+@media screen and (max-width: 375px) {
+    .header-title {
+        font-size: 24px;
+    }
+
+    .header-subtitle {
+        font-size: 16px;
+    }
+
+    .login-button,
+    .registro-button {
+        padding: 8px 16px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .section-title h3 {
+        font-size: 24px;
+    }
+
+    .courses-section h3 {
+        font-size: 18px;
+    }
+
+    .course-list {
+        font-size: 14px;
+    }
+
+    .course-info a {
+        font-size: 12px;
+    }
+}
+
+/* Estilos específicos para tablets */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    
+}
+
+/* Estilos específicos para laptops */
+@media screen and (min-width: 1025px) {
+
 }
