@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{ url_for('static', filename='img/favicon.ico') }}" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilo.css') }}">
+    <script src="{{ url_for('static', filename='js/cursos.js') }}"></script>
+    <title>OnlinEnglish</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="{{ url_for('static', filename='img/onlineNglish (1).png') }}" alt="Logotipo de OnlineEnglish"
+                class="logo">
+        </div>
+        <div class="header-content">
+            <h1 class="header-title">OnlinEnglish</h1>
+            <h3 class="header-subtitle">Animate a abrir nuevas puertas</h3>
+        </div>
+        <div class="header-buttons">
+            <a href="login.html" class="login-button">Iniciar Sesión</a>
+            <a href="registro.html" class="registro-button">Registrarse</a>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="alumnos.html">Alumnos</a>
+        <a href="prueba.html">Prueba de Nivelación</a>
+        <a href="cursos.html">Cursos</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <h1>Gestión de Cursos</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Stock</th>
+                <th>Imagen</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for curso in cursos %}
+            <tr>
+                <td>{{ curso.nombre }}</td>
+                <td>{{ curso.precio }}</td>
+                <td>{{ curso.stock }}</td>
+                <td>{{ curso.imagen }}</td>
+                <td>
+                    <button onclick="verCurso('{{ curso.nombre }}')">Ver</button>
+                    <button onclick="editarCurso('{{ curso.nombre }}')">Editar</button>
+                    <button onclick="eliminarCurso('{{ curso.nombre }}')">Eliminar</button>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h2>Agregar Nuevo Curso</h2>
+    <form id="formulario-curso">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="precio">Precio:</label>
+        <input type="text" id="precio" name="precio" required>
+
+        <label for="stock">Stock:</label>
+        <input type="text" id="stock" name="stock" required>
+
+        <label for="imagen">Imagen:</label>
+        <input type="text" id="imagen" name="imagen" required>
+
+        <button type="button" onclick="registrarCurso()">Registrar Curso</button>
+    </form>
+
+    <script>
+        function verCurso(nombre) {
+            // Implementa la lógica para ver detalles del curso
+            console.log("Ver curso:", nombre);
+        }
+
+        function editarCurso(nombre) {
+            // Implementa la lógica para editar el curso
+            console.log("Editar curso:", nombre);
+        }
+
+        function eliminarCurso(nombre) {
+            // Implementa la lógica para eliminar el curso
+            console.log("Eliminar curso:", nombre);
+        }
+
+        function registrarCurso() {
+            // Implementa la lógica para registrar un nuevo curso
+            console.log("Registrar nuevo curso");
+        }
+    </script>
+
+    <footer class="flex">
+        <h4 class="footer-title">Seguinos en nuestras redes</h4>
+        <div class="social-icons">
+            <div class="social-icon">
+                <img src="{{ url_for('static', filename='img/instagram.png') }}" alt="Logo de Instagram">
+                <h5>Instagram</h5>
+            </div>
+            <div class="social-icon">
+                <img src="{{ url_for('static', filename='img/facebook.png') }}" alt="Logo de Facebook">
+                <h5>Facebook</h5>
+            </div>
+            <div class="social-icon">
+                <img src="{{ url_for('static', filename='img/linkedin.png') }}" alt="Logo de LinkedIn">
+                <h5>LinkedIn</h5>
+            </div>
+        </div>
+
+        <h6 class="footer-info">OnlinEnglish 2023 Derechos Reservados</h6>
+    </footer>
+</body>
+
+</html>
